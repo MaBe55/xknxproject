@@ -44,7 +44,7 @@ class XKNXProj:
         if combine:
             project = combine_project(project)
 
-        _LOGGER.info("Parsing took %s seconds", time.time() - _start)
+        _LOGGER.debug("Parsing took %s seconds", time.time() - _start)
         _LOGGER.info(
             "Found %s group addresses, %s devices and %s used communication objects",
             len(project["group_addresses"]),
